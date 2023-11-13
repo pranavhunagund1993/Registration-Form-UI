@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .mainContainer{
+            width: 100%;
+            height: 100vh;
+            background: rgb(242, 242, 242);
+            position: relative;
+        }
+
+        .mainContainer > article{
+            width: 28%;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            background-color: #fff;
+            border-top: 5px solid #f4b60a;
+            position: absolute;
+            top: 50px;
+            left: 500px;
+        }
+
+        .mainContainer > article > form{
+            height: inherit;
+            margin: 10px;
+            padding: 10px;
+        }
+
+        .mainContainer > article > form > h3{
+            text-align: center;
+            line-height: 1.5;
+        }
+
+        .mainContainer > article > form > div{
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0;
+            position: relative;
+        }
+
+        .mainContainer > article > form > div > input{
+            width: 90%;
+            padding: 7px;
+            margin-left: 25px;
+            border: 2px solid #ccc;
+            border-top-right-radius: 3px;
+            border-bottom-right-radius: 3px;
+        }
+
+        .mainContainer > article > form > div > input:focus, .mainContainer > article > form > div > select:focus{
+            outline: none;
+        }
+
+    
+        .mainContainer > article > form > div > select{
+            width: 99%;
+            padding: 8px 5px;
+            border: 2px solid #ccc;
+            margin-left: -8px;
+            border-radius: 5px;
+        }
+
+        .mainContainer > article > form > div.userDetails{
+            position: relative;
+        }
+
+        .mainContainer > article > form > div.userDetails > input{
+            width: 35%;
+        }
+
+        .mainContainer > article > form > div.userDetails > input.input1{
+            position: absolute;
+            top: 10px;
+            left: 11px;
+        }
+
+        .mainContainer > article > form > div.userDetails > input.input2{
+            position: absolute;
+            top: 10px;
+            right: 22px;
+        }
+
+        .mainContainer > article > form > div > img{
+            border: 1px solid #ccc;
+            padding: 8px 7px;
+            position: absolute;
+            top: 10px;
+            left: 4px;
+        }
+
+        .mainContainer > article > form > div.userDetails > img.user1{
+            position: relative;
+            left: -6px;
+            top: 0px;
+        }
+
+        .mainContainer > article > form > div.userDetails > img.user2{
+            position: relative;
+            left: 150px;
+            top: 0px;
+        }
+
+        .mainContainer > article > form > input{
+            margin-left: 4px;
+        }
+
+        .mainContainer > article > form > label{
+            font-size: 0.8em;
+            line-height: 1.5;
+        }
+
+        .mainContainer > article > form > div > input.btn{
+            width: 99%;
+            background-color: #f4b60a;
+            color: #fff;
+            border:1px solid #ccc;
+            border-radius: 2px;
+            margin-left: -8px;
+            font-weight: bold;
+            font-size: 1em;
+            letter-spacing: 1px;
+        }
+    </style>
+</head>
+<body>
+    <section class="mainContainer">
+        <article>
+            <form action="" autocomplete="off">
+                <h3>Responsive Registration</h3>
+                <h3>Form</h3>
+    
+                <div>
+                    <img src="assets/images/email.png" alt="Email">
+                    <input type="email" placeholder="Email" name="email" id="email">
+                </div>
+    
+                <div>
+                    <img src="assets/images/lock.png" alt="Password">
+                    <input type="password" placeholder="Password" name="password" id="password">
+                </div>
+    
+                <div>
+                    <img src="assets/images/lock.png" alt="Re-type Password">
+                    <input type="password" placeholder="Re-type Password" name="reTypePassword" id="reTypePassword">
+                </div>
+    
+                <div class="userDetails">
+                    <img src="assets/images/user.png" alt="User" class="user1">
+                    <input type="text" placeholder="First Name" name="firstName" id="firstName" class="input1">
+    
+                    <img src="assets/images/user.png" alt="User"  class="user2">
+                    <input type="text" placeholder="Last Name" name="lastName" id="lastName" class="input2">
+                </div>
+    
+                <input type="radio" name="gender" id="male">
+                <label for=""> Male</label>
+                <input type="radio" name="gender" id="female"> 
+                <label for="">Female</label>
+    
+                <div>
+                    <select name="country" id="country">
+                        <option value="null"> Select a Country </option>
+                        <option value="india">India</option>
+                        <option value="usa">USA</option>
+                        <option value="japan">Japan</option>
+                        <option value="uk">UK</option>
+                        <option value="nepal">Nepal</option>
+                    </select>
+                </div>
+    
+                <input type="checkbox" name="checkbox" id="checkbox1">
+                <label for="">I agree with terms and conditions</label>
+    
+                <br><br>
+    
+                <input type="checkbox" name="checkbox" id="checkbox2">
+                <label for="">I want to receive the newsletter</label>
+
+                <div>
+                    <input type="submit" value="Register" class="btn">
+                </div>
+            </form>
+        </article>   
+    </section>
+</body>
+</html>
